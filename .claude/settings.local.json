@@ -1,0 +1,32 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 -c ' *)",
+      "Bash(pip3 show *)",
+      "Bash(python3 -m pip install --quiet pypdf)",
+      "Bash(pdftotext -layout UnRockingDrones.pdf /private/tmp/claude-502/-Users-tchowdh4-Documents-Study-Research/f82ad40c-2fd5-4c84-ad0a-9e4790fadc7a/scratchpad/UnRockingDrones.txt)",
+      "Bash(pdftotext -layout \"Injected and Delivered- Fabricating Implicit Control over Actuation Systems by Spoofing Inertial Sensors.pdf\" /private/tmp/claude-502/-Users-tchowdh4-Documents-Study-Research/f82ad40c-2fd5-4c84-ad0a-9e4790fadc7a/scratchpad/injected.txt)",
+      "Bash(pdftotext -layout \"PyCRA- Physical Challenge-Response Authentication For Active Sensors Under Spoofing Attacks.pdf\" /private/tmp/claude-502/-Users-tchowdh4-Documents-Study-Research/f82ad40c-2fd5-4c84-ad0a-9e4790fadc7a/scratchpad/pycra.txt)",
+      "Bash(pdftotext -layout \"/Users/tchowdh4/Documents/Study/Research/Software-based Realtime Recovery from Sensor Attacks on Robotic Vehicles.pdf\" p1.txt)",
+      "Bash(pdftotext -layout \"/Users/tchowdh4/Documents/Study/Research/SpecGuard Specification Aware REcovery for Robotic Autonomous Vehivles from Physical Attacks.pdf\" p2.txt)",
+      "Bash(pdftotext -layout \"/Users/tchowdh4/Documents/Study/Research/Exploiting Physical Dynamics to Detect Actuator and Sensor Attacks in Mobile Robots.pdf\" p3.txt)",
+      "Bash(pdftotext -layout \"/Users/tchowdh4/Documents/Study/Research/Anomaly_detection_in_cyber-physical_systems_A_formal_methods_approach.pdf\" p1.txt)",
+      "Bash(pdftotext -layout \"/Users/tchowdh4/Documents/Study/Research/Formal technique book.pdf\" p2.txt)",
+      "Bash(pdftotext -layout \"/Users/tchowdh4/Documents/Study/Research/Secure Autonomous Cyber Physical Systems.pdf\" p3.txt)",
+      "Bash(mkdir -p /private/tmp/claude-502/-Users-tchowdh4-Documents-Study-Research/f82ad40c-2fd5-4c84-ad0a-9e4790fadc7a/scratchpad)",
+      "Bash(pdftotext -layout \"/Users/tchowdh4/Documents/Study/Research/Microprocessors and Microsystems.pdf\" mm.txt)",
+      "Bash(pdftotext -layout \"/Users/tchowdh4/Documents/Study/Research/Discovering IoT Physical Channel Vulnerabilities.pdf\" iot.txt)",
+      "Bash(pdftotext -layout \"/Users/tchowdh4/Documents/Study/Research/Software Availability Protection in Cyber-Physical Systems.pdf\" avail.txt)",
+      "Bash(pdftotext -layout \"/Users/tchowdh4/Documents/Study/Research/Adversarial Sensor Attack on LiDAR-based Perception inAutonomous Driving.pdf\" p1.txt)",
+      "Bash(pdftotext -layout \"/Users/tchowdh4/Documents/Study/Research/Invisible_for_both_Camera_and_LiDAR_Security_of_Multi-Sensor_Fusion_based_Perception_in_Autonomous_Driving_Under_Physical-World_Attacks.pdf\" p2.txt)",
+      "Bash(pdfinfo \"Software-based Realtime Recovery from Sensor Attacks on Robotic Vehicles.pdf\")",
+      "Bash(pdfinfo \"/Users/tchowdh4/Documents/Study/Research/Formal technique book.pdf\")",
+      "Bash(pdftotext -layout \"/Users/tchowdh4/Documents/Study/Research/Formal technique book.pdf\" p2b.txt)",
+      "Bash(pdfinfo \"SpecGuard Specification Aware REcovery for Robotic Autonomous Vehivles from Physical Attacks.pdf\")",
+      "Bash(pdftotext -layout -f 1 -l 1 \"SpecGuard Specification Aware REcovery for Robotic Autonomous Vehivles from Physical Attacks.pdf\" -)",
+      "Bash(pdfinfo \"Exploiting Physical Dynamics to Detect Actuator and Sensor Attacks in Mobile Robots.pdf\")",
+      "Bash(pdftotext -layout -f 1 -l 1 \"Exploiting Physical Dynamics to Detect Actuator and Sensor Attacks in Mobile Robots.pdf\" -)",
+      "Bash(pdftotext -layout \"/Users/tchowdh4/Documents/Study/Research/Formal technique book.pdf\" formal_book.txt)"
+    ]
+  }
+}
