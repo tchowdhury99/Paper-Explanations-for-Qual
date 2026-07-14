@@ -20,7 +20,7 @@ Legend: **P**=Prediction, **Th**=Threshold, **D**=Detection, **R**=Recovery, **F
 | # | Paper (short) | Sensors | UAV/UGV | Role | P | Th | D | R | FG (method) | Rate |
 |---|---|---|---|---|:-:|:-:|:-:|:-:|---|:-:|
 | 1 | Adv‑LiDAR | LiDAR | AV/UGV | Attack | No | Yes | No | No | — | 1 |
-| 2 | Anomaly Detection – STL | generic CPS | neither (train) | Detection | Yes | Yes | Yes | No | Yes STL robustness semantics | 2 |
+| 2 | Anomaly Detection – STL | generic CPS | neither (train) | Detection | Yes | Yes | Yes | No | Yes STL robustness semantics | 0 |
 | 3 | DeLorean | GPS,gyro,accel,mag,baro | UAV+UGV | Detect+Diagnose+Recover | Yes | Yes | Yes | Yes | No | 3 |
 | 4 | ESP Spoofing | MEMS gyro | UGV (car) | Attack+defense | Yes | Yes | Yes | Yes | No | 3 |
 | 5 | RIDS | GPS,IMU/accel | UGV(+UAV) | Detection | Yes | Yes | Yes | No | Yes Chi‑square hypothesis test | 2 |
