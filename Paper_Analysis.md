@@ -19,33 +19,32 @@ Legend: **P**=Prediction, **Th**=Threshold, **D**=Detection, **R**=Recovery, **F
 
 | # | Paper (short) | Sensors | UAV/UGV | Role | P | Th | D | R | FG (method) | Rate |
 |---|---|---|---|---|:-:|:-:|:-:|:-:|---|:-:|
-| 1 | Adv‑LiDAR | LiDAR | AV/UGV | Attack | No | Yes | No | No | — | 3 |
+| 1 | Adv‑LiDAR | LiDAR | AV/UGV | Attack | No | Yes | No | No | — | 1 |
 | 2 | Anomaly Detection – STL | generic CPS | neither (train) | Detection | Yes | Yes | Yes | No | Yes STL robustness semantics | 2 |
 | 3 | DeLorean | GPS,gyro,accel,mag,baro | UAV+UGV | Detect+Diagnose+Recover | Yes | Yes | Yes | Yes | No | 3 |
-| 4 | ESP Spoofing | MEMS gyro | UGV (car) | Attack+defense | Yes | Yes | Yes | Yes | No | 2 |
-| 5 | RIDS | GPS,IMU/accel | UGV(+UAV) | Detection | Yes | Yes | Yes | No | Yes Chi‑square hypothesis test | 3 |
+| 4 | ESP Spoofing | MEMS gyro | UGV (car) | Attack+defense | Yes | Yes | Yes | Yes | No | 3 |
+| 5 | RIDS | GPS,IMU/accel | UGV(+UAV) | Detection | Yes | Yes | Yes | No | Yes Chi‑square hypothesis test | 2 |
 | 6 | GAN‑MP | GPS,IMU,cam,LiDAR | UGV | Mitigation | Yes | No | No | Yes | No | 2 |
 | 7 | Hybrid Monitors | CPS I/O | ADS+APS | Detect+Mitigate | Yes | Yes | Yes | Yes | Yes STL specification | 3 |
-| 8 | Injected & Delivered | MEMS IMU | mixed embedded | Attack | No | No | No | No | Yes sampling‑drift theorem | 3 |
-| 9 | MSF‑ADV | camera+LiDAR | AV/UGV | Attack | No | Yes | No | No | — | 3 |
-| 10 | SeqRec | CPS sensors | UAV+UGV | Recovery | Yes | No | No | Yes | No | 3 |
+| 9 | MSF‑ADV | camera+LiDAR | AV/UGV | Attack | No | Yes | No | No | — | 1 |
+| 10 | SeqRec | CPS sensors | UAV+UGV | Recovery | Yes | No | No | Yes | No | 2 |
 | 11 | PID‑Piper | GPS,baro,gyro,accel,mag | UAV+UGV | Detect+Recover | Yes | Yes | Yes | Yes | No | 3 |
 | 12 | PyCRA | active sensors | neither | Detect+Resilience | Yes | Yes | Yes | Yes | Yes physical‑delay bound + χ² detector | 3 |
-| 13 | Real‑time Recovery LQR | CPS sensors | UAV+UGV(sim) | Recovery | Yes | No | No | Yes | Yes reachability analysis | 3 |
+| 13 | Real‑time Recovery LQR | CPS sensors | UAV+UGV(sim) | Recovery | Yes | No | No | Yes | Yes reachability analysis | 2 |
 | 14 | Nyctea | flight state | UAV | Detect+Rectify(config) | Yes | Yes | Yes | Yes | No | 2 |
-| 15 | Data‑Predictive Recovery | cam,LiDAR,IMU,GPS | UAV+UGV+marine | Recovery | Yes | No | No | Yes | Yes nonlinear reachability (Flow*) | 3 |
-| 16 | Recovery Survey | — | all CPS | Survey | Yes | — | Yes | Yes | Yes (reviews formal methods) | 3 |
-| 17 | Robotics Security Survey | — | all robots | Survey | Yes | — | Yes | Yes | — | 2 |
-| 18 | DAE‑Crit‑LSTM | position/localization | UGV(multi) | Mitigation | Yes | No | No | Yes | No | 3 |
+| 15 | Data‑Predictive Recovery | cam,LiDAR,IMU,GPS | UAV+UGV+marine | Recovery | Yes | No | No | Yes | Yes nonlinear reachability (Flow*) | 2 |
+| 16 | Recovery Survey | — | all CPS | Survey | Yes | — | Yes | Yes | Yes (reviews formal methods) | 2 |
+| 17 | Robotics Security Survey | — | all robots | Survey | Yes | — | Yes | Yes | — | 3 |
+| 18 | DAE‑Crit‑LSTM | position/localization | UGV(multi) | Mitigation | Yes | No | No | Yes | No | 2 |
 | 19 | Robustness Testing | APS glucose | neither(APS) | Detection robustness | Yes | Yes | Yes | No | No | 2 |
-| 20 | SCVMON | gyro,accel,baro,GPS+params | UAV | Detect+Recover | Yes | Yes | Yes | Yes | Yes s‑t‑cut completeness proof | 3 |
+| 20 | SCVMON | gyro,accel,baro,GPS+params | UAV | Detect+Recover | Yes | Yes | Yes | Yes | Yes s‑t‑cut completeness proof | 2 |
 | 21 | Secure Autonomous CPS | camera,LiDAR,GPS | UGV(Segway) | Prevention | No | No | Yes | No | Yes language‑based IFC (Jif) + verified HW | 3 |
 | 22 | UAV Attack Classification | gyro,accel,mag,baro,GPS | UAV | Detect+Classify | Yes | Yes | Yes | No | No | 2 |
-| 23 | Gecko | IMU/peripherals | UAV+UGV+arm | Recovery(availability) | Yes | Yes | Yes | Yes | Yes real‑time availability formulation | 3 |
+| 23 | Gecko | IMU/peripherals | UAV+UGV+arm | Recovery(availability) | Yes | Yes | Yes | Yes | Yes real‑time availability formulation | 2 |
 | 24 | SSR (Software Sensors) | gyro,accel,GPS,baro,mag | UAV+UGV | Detect+Recover | Yes | Yes | Yes | Yes | No | 3 |
 | 25 | SpecGuard | GPS,gyro,accel,cam,LiDAR | UAV+UGV | Recovery | Yes | Yes | No | Yes | Yes STL mission specs | 3 |
 | 26 | Stealthy vs CI/EKF | baro,gyro,accel,mag,GPS | UAV+UGV | Attack(evasion) | Yes | Yes | No | No | No | 3 |
-| 27 | TileMask | mmWave radar | AV/UGV | Attack | No | Yes | No | No | — | 3 |
+| 27 | TileMask | mmWave radar | AV/UGV | Attack | No | Yes | No | No | — | 2 |
 | 28 | Un‑Rocking Drones | MEMS IMU | UAV | Attack+Recover | Yes | No | Yes | Yes | No | 3 |
 
 ---
@@ -101,7 +100,7 @@ Legend: **P**=Prediction, **Th**=Threshold, **D**=Detection, **R**=Recovery, **F
 11. **Novelty vs prior work:** Prior LiDAR spoofing (Petit et al.; Shin et al.) only injected raw points and was shown *insufficient* here to survive the ML detector; prior adversarial‑ML (Carlini‑Wagner, image attacks) never targeted LiDAR object detection or modeled physical spoofing limits. **First** to combine physical spoofing‑capability modeling with an optimization attack on LiDAR ML perception.
 12. **Limitation:** White‑box; narrow ~8° spoofing angle; ~60 stable points; impact shown in simulation, not on a moving vehicle.
 13. **Threat model (detail):** Goal = inject a front‑near fake obstacle to trigger unsafe driving decisions. Capability = laser+photodiode+delay spoofer mounted roadside or on an attack vehicle in an adjacent lane, aiming via camera tracking; stealthy (invisible IR). Knowledge = **white‑box** access to the ML model + perception pipeline (justified as obtainable by reverse engineering). No physical contact with the victim.
-14. **Rating:** **3/3**.
+14. **Rating:** **1/3**.
 
 ### 2. Anomaly Detection in CPS: A Formal Methods Approach (CDC 2014)
 1. **Sensors:** Generic CPS output signals (train velocity); not sensor‑specific.
@@ -149,7 +148,7 @@ Legend: **P**=Prediction, **Th**=Threshold, **D**=Detection, **R**=Recovery, **F
 11. **Novelty vs prior work:** Builds on Son et al. (gyro DoS) and Trippel et al. (WALNUT accelerometer control) but targets a **complex, human‑in‑the‑loop ESP system** rather than toy RC cars, and adds **audio‑overlay stealth** so the high‑frequency component is concealed in normal sound.
 12. **Limitation:** Carsim/Simulink simulation only (no real vehicle); the safe‑speed threshold could not be precisely measured (left to future work).
 13. **Threat model (detail):** Goal = paralyze ESP → loss of control. Capability = follow the target with high‑power ultrasonic equipment (external model) or co‑located device; **knows the control algorithm** but cannot directly access/modify the controller. Two attack models (external following vs proximate).
-14. **Rating:** **2/3**.
+14. **Rating:** **3/3**.
 
 ### 5. RIDS — Exploiting Physical Dynamics to Detect Actuator & Sensor Attacks (2017)
 1. **Sensors:** GPS, IMU/accelerometer, IPS (Khepera's 3 sensors); UAV IMU+GPS generalization.
@@ -165,7 +164,7 @@ Legend: **P**=Prediction, **Th**=Threshold, **D**=Detection, **R**=Recovery, **F
 11. **Novelty vs prior work:** Host/network IDS (system calls, packets) miss physical‑channel attacks; wireless‑sensor‑network IDS rely on majority voting / Byzantine thresholds that fail when >½ sensors are compromised. RIDS is the **first** to detect *both* sensor and actuator attacks in nonlinear stochastic mobile robots **without** voting/Byzantine thresholds, and additionally pinpoints and quantifies the attack.
 12. **Limitation:** Needs ≥1 uncorrupted sensor; cannot distinguish fault from attack; single Khepera platform; detection‑only (no recovery).
 13. **Threat model (detail):** Goal = actively alter robot behavior via a subset of sensors/actuators. Capability = corrupt one or more (but not all) sensing/actuation workflows through various channels; a powerful attacker corrupting all sensors is out of scope. Defender = planner runs NUISE, trusts no single workflow.
-14. **Rating:** **3/3**.
+14. **Rating:** **2/3**.
 
 ### 6. GAN‑MP — GAN‑based Robust Motion Planning vs Localization Attacks (RA‑L 2023)
 1. **Sensors:** GPS, IMU, camera, LiDAR (localization module).
@@ -215,7 +214,7 @@ Legend: **P**=Prediction, **Th**=Threshold, **D**=Detection, **R**=Recovery, **F
 11. **Novelty vs prior work:** All prior AV‑perception attacks (sticker/poster on signs; laser on LiDAR) hit a **single** modality, and MSF was widely believed secure *because* not all sources can be attacked at once. This is the **first** study of MSF security and the **first** to attack **all fusion sources simultaneously**, directly refuting the core MSF design assumption.
 12. **Limitation:** White‑box full knowledge; DNN defenses evaluated in digital space; doesn't cover DNN‑level fusion; static object.
 13. **Threat model (detail):** Goal = make the victim AV fail to detect a front obstacle → crash. Capability = fabricate (3D‑print) and place an adversarial object on the roadway, optionally concealed as a worn traffic cone. Knowledge = **white‑box** full knowledge of the MSF perception (as in most adversarial work); no runtime access to the vehicle.
-14. **Rating:** **3/3**.
+14. **Rating:** **1/3**.
 
 ### 10. SeqRec — Learn‑to‑Respond: Sequence‑Predictive Recovery (IEEE RTSS 2023)
 1. **Sensors:** Generic CPS sensors (GPS, accelerometer; car speed, drone altitude).
@@ -231,7 +230,7 @@ Legend: **P**=Prediction, **Th**=Threshold, **D**=Detection, **R**=Recovery, **F
 11. **Novelty vs prior work:** Discard‑and‑estimate methods reuse the original controller (not timely); the LQR/LP real‑time recovery line (Zhang et al.) is **model‑based** and hard to apply to black‑box/complex systems; robust control handles only bounded errors, not unbounded sensor attacks. SeqRec is the **first sequence‑predictive, model‑free** recovery, with a dedicated recovery controller learned end‑to‑end.
 12. **Limitation:** Depends on the external detector + its delay; no formal guarantee; needs training data; no post‑recovery stability guarantee.
 13. **Threat model (detail):** Goal = drive the system from target to unsafe states via compromised sensors. Capability = spoof/transduce sensors non‑invasively. Assumption = a detector already runs (with some delay); recovery capability is bounded by detector quality; corrupted sensors are isolated during recovery.
-14. **Rating:** **3/3**.
+14. **Rating:** **2/3**.
 
 ### 11. PID‑Piper — Recovering RVs from Physical Attacks (DSN 2021)
 1. **Sensors:** GPS, barometer, gyroscope, accelerometer, magnetometer.
@@ -279,7 +278,7 @@ Legend: **P**=Prediction, **Th**=Threshold, **D**=Detection, **R**=Recovery, **F
 11. **Novelty vs prior work:** Cyber recovery rolls back *computing* state, not the physical state; discard‑and‑reuse‑original‑controller methods ignore the **safety deadline** and can't guarantee safety during recovery; robust control handles only bounded disturbance. This adds **LQR recovery with timing/safety constraints + ADMM + reachability deadline estimator + maintainability**, extending the authors' own linear‑approximation recovery (RTSS'20) with smoothness and post‑recovery hold.
 12. **Limitation:** Needs an external detector; LQR/linearization; simulation only; non‑negligible recovery compute for complex systems.
 13. **Threat model (detail):** Goal = alter sensor data to push the plant to unsafe states. Capability = arbitrarily modify sensor readings from cyber or transduction channels. Assumptions = a detector already exists and provides the attack‑start time; recovery triggers on its alert (a false negative → no recovery).
-14. **Rating:** **3/3**.
+14. **Rating:** **2/3**.
 
 ### 14. Nyctea — Real‑time Rectifying Flight Control Misconfiguration (ACM TOSEM 2025)
 1. **Sensors:** Drone flight state via physical‑vs‑desired deviation (not sensor‑specific).
@@ -311,7 +310,7 @@ Legend: **P**=Prediction, **Th**=Threshold, **D**=Detection, **R**=Recovery, **F
 11. **Novelty vs prior work:** Virtual‑sensor recovery reuses the nominal controller (no timing/safety guarantee); prior safety‑controller recovery (LP/LQR, Zhang et al.) assumes **linear** systems and **discards all sensors** after detection (uncertainty explodes). This is the **first real‑time recovery for nonlinear CPS** using nonlinear reachability + online deadline + retention of uncompromised sensors.
 12. **Limitation:** Needs an external detector/diagnosis; small chance the recovery check fails (fail‑safe fallback); simulation only.
 13. **Threat model (detail):** Goal = corrupt sensor measurements → stale state estimates → unsafe states. Capability = non‑invasive transduction/spoofing of some sensors (no assumption on which). Assumptions = compromised sensors are identifiable from data; a detector already flags the attack; some sensors remain good.
-14. **Rating:** **3/3**.
+14. **Rating:** **2/3**.
 
 ### 16. Recovery from Adversarial Attacks in CPS: Shallow, Deep, Exploratory — Survey (ACM CSUR 2024)
 1. **Sensors:** N/A (survey — sensors/actuators/controllers).
@@ -359,7 +358,7 @@ Legend: **P**=Prediction, **Th**=Threshold, **D**=Detection, **R**=Recovery, **F
 11. **Novelty vs prior work:** Single‑robot recovery (SSR, PID‑Piper) degrades badly on simultaneous multi‑robot attacks; detection‑based defenses (control invariants, CUSUM, deep learning) have limited response + high FP. This is the **first DAE‑based, detector‑free PDA mitigation for multi‑robot systems** (a stronger‑venue follow‑up to the same group's GAN‑MP).
 12. **Limitation:** Simulation only; multi‑robot‑specific; assumes each robot localizes itself accurately; attacker can't access control software.
 13. **Threat model (detail):** Goal = feed wrong obstacle positions so a robot collides. Capability = tamper with obstacle positions via (i) compromised adversarial robots broadcasting false positions, (ii) sensor manipulation (LiDAR FOV / designated‑position spoofing), or (iii) comm‑channel modification; time‑varying. Assumption = attacker cannot access control software (cannot bypass the DAE); robots know their **own** position accurately.
-14. **Rating:** **3/3**.
+14. **Rating:** **2/3**.
 
 ### 19. Robustness Testing of Data‑ and Knowledge‑Driven Anomaly Detection (DSN‑W 2022)
 1. **Sensors:** CPS sensors — APS blood‑glucose / insulin‑on‑board.
@@ -407,7 +406,7 @@ Legend: **P**=Prediction, **Th**=Threshold, **D**=Detection, **R**=Recovery, **F
 11. **Novelty vs prior work:** Prior CPS security protected a **single layer**, or used steep‑learning‑curve formal tools; prior resilient‑estimation gives bounds under stochastic noise but no language‑level guarantees. This is the **first** to **vertically integrate** language‑based IFC across HW/SW/control for provable AV security.
 12. **Limitation:** No physical hardware tampering; assumes ≥1 trusted obstacle detector and a hardened OS microkernel; the verified processor isn't yet integrated into the prototype; not all sensors compromised.
 13. **Threat model (detail):** Remote adversary with **no direct hardware access** but controlling untrusted network inputs (e.g., a compromised map server) and a **subset** of sensor inputs via spoofing/environmental tampering; may take over user‑level software; assumes a hardened OS and that not all sensors/inputs are controlled (no defense against a fully‑omnipotent adversary).
-14. **Rating:** **3/3**.
+14. **Rating:** **2/3**.
 
 ### 22. Sensor Attack Online Classification for UAVs using ML (Computers & Security 2025)
 1. **Sensors:** Gyroscopes, accelerometers, magnetometers, barometers, GPS.
@@ -487,7 +486,7 @@ Legend: **P**=Prediction, **Th**=Threshold, **D**=Detection, **R**=Recovery, **F
 11. **Novelty vs prior work:** Prior attacks exploited comm channels or injected noise **in the absence of protection**; here the RV is **protected by both CI and EKF**, and the attack is **fully automated** with minimal a‑priori knowledge (only that the RV uses PID). Claims to be the **first** to automatically find undetectable attacks against the control‑state‑estimation model without targeting a specific RV.
 12. **Limitation:** The learned model/thresholds vary per hardware platform (needs re‑learning); assumes code injection / acoustic but **no** firmware tamper, root, or log deletion; requires a learning phase.
 13. **Threat model (detail):** Goal = deviate/disrupt the mission stealthily. Capability = (i) malicious‑code injection replacing shared libraries with pre‑computed state‑space matrices + thresholds, or (ii) acoustic injection at the resonant frequency; can profile the RV over 5–7 missions. Constraints = **cannot** tamper firmware, has no root/OS access, cannot delete logs, no a‑priori physical‑property knowledge; assumes both CI and EKF may be deployed together.
-14. **Rating:** **3/3** (motivates the recovery line — PID‑Piper etc.).
+14. **Rating:** **2/3** (motivates the recovery line — PID‑Piper etc.).
 
 ### 27. TileMask — Passive‑Reflection Attack against mmWave Radar Object Detection (CCS 2023)
 1. **Sensors:** mmWave radar (FMCW).
