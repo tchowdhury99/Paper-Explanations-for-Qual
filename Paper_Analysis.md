@@ -116,7 +116,7 @@ Legend: **P**=Prediction, **Th**=Threshold, **D**=Detection, **R**=Recovery, **F
 11. **Novelty vs prior work:** Extends the authors' own supervised reactive‑STL learning (Kong et al.) to the **unlabeled** case and drops the required causal structure; unlike ML detectors (Gaussian‑process, one‑class SVM) that yield opaque high‑dimensional surfaces, the STL formula is interpretable. Claims to be the **first** application of formal methods to anomaly detection.
 12. **Limitation:** Only a toy example + one train simulator; no real robot; assumes attacks happen after learning and that classes are separable; 2014 scope.
 13. **Threat model (detail):** Adversary disables a subset of brakes, changing system dynamics; the number of disabled brakes `b` bounds attacker power. Learning happens on attack‑free data first; detection is post‑hoc.
-14. **Rating:** **2/3**.
+14. **Rating:** **0/3**.
 
 ### 3. DeLorean — Diagnosis‑guided Attack Recovery for RVs (ASIA CCS 2024)
 1. **Sensors:** GPS, gyroscope, accelerometer, magnetometer, barometer (heterogeneous).
